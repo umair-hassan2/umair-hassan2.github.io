@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Umair Hassan"
   pronouns         : "he/him"
-  bio              : "AI Researcher interested in multimodal learning, computer vision, and interpretability. Exploring how models can develop structured, explainable understanding of the world."
+  bio              : "Motivated researcher driven by curiosity for mathematics, coding, and understanding how intelligent systems perceive the world. Exploring the foundations of intelligent visual understanding."
   location         : "Lahore, Pakistan"
   employer         : "Motive Inc"
   uri              : # URL
@@ -54,7 +54,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/umair-hassan-gondal/"
+  linkedin         : "umair-hassan-gondal"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -71,7 +71,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "UmairHassan_01"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username

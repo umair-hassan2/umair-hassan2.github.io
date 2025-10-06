@@ -11,8 +11,11 @@ main:
   - title: "Publications"
     url: /publications/
     
+  - title: "Education & Experience"
+    url: /education-experience/
+    
   - title: "CV"
-    url: /cv/
+    url: /files/cv.pdf
     
   - title: "Portfolio"
     url: /portfolio/

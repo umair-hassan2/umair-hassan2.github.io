@@ -9,40 +9,36 @@ redirect_from:
 
 ## Biography
 
-I'm Umair Hassan, a researcher interested in how machines perceive, reason, and learn from multimodal information.
+I'm Umair Hassan, a motivated researcher driven by curiosity for mathematics, coding, and understanding how intelligent systems perceive the world. My fascination with learning and reasoning has guided me to the crossroads of artificial intelligence and computer vision, where I aim to build models that not only see but truly understand. Fun fact: as a child, I dreamed of creating autonomous cars but fortunately (or unfortunately for me), that problem got solved before I did. The curiosity that started there now fuels my drive to explore what comes next.
 
-My work lies at the intersection of computer vision, representation learning, and interpretability, where I explore how models can move beyond correlation to develop structured, explainable understanding of the world.
-
-I'm fascinated by the challenge of aligning model perception with human cognition—how visual and linguistic representations can be unified in transparent, data-efficient ways.
-
-My broader goal is to contribute to intelligent systems that not only perform well, but also reveal how and why they understand.
+My work now centers on exploring the foundations of intelligent visual understanding. How models interpret, adapt, and generalize from the world around them. I'm continuously seeking new problems that challenge conventional boundaries and expand our grasp of what AI can truly achieve.
 
 ## Research Interests
 
-Under Development.
+My research interests lie primarily in computer vision, with a focus on model interpretability, quantization, and adaptation. I'm intrigued by how vision systems can learn compact yet expressive representations, adapt efficiently to new domains, and offer transparency in their decision making processes. Beyond these areas, I'm broadly curious about emerging directions in multimodal learning and efficient AI, and remain open to exploring diverse topics that advance our understanding of how intelligent systems perceive and reason about the world.
 
 ## Latest News
 
 - **Preprint published**: "COCO-Urdu: A Large-Scale Urdu Image-Caption Dataset with Multimodal Quality Estimation" published on arXiv. ([arXiv:2509.09014](https://arxiv.org/abs/2509.09014))
 
-## Education
 
-**Punjab University College of IT (PUCIT), Lahore, Pakistan**  
-Bachelor of Science in Software Engineering (2020–2024)  
-CGPA: 3.71 / 4.00
+## Achievements and Awards
 
-**Relevant Coursework**: Data Structures & Algorithms, Distributed Systems, Databases, Machine Learning, AI & Computer Vision
+### Competitive Programming
+- **Represented Pakistan** at the ICPC Asia West finals
+- **Gold Medal** (2024) and **Silver Medal** (2025) at the ICPC Asia Topi Regionals
+- **Ranked 7th nationally (solo)** in Meta HackerCup 2023
+- **Multiple podium finishes** in national programming competitions:
+  - PUCON'23
+  - INMIC'24
+  - DAIRA'24
+  - Electrocon'24
+  - Technocon'24
+  - BrainX'24
 
-## Industry Experience
+### Academic Recognition
+- **Recognized among the Top 1% IT graduates** by HEC Pakistan
 
-**Motive Inc. (formerly KeepTruckin), Backend Software Engineer (L2)**  
-*Aug 2024–Present | Remote, San Francisco, CA*
-
-- Spearheaded automation for promotional campaigns (Ruby on Rails, Go, PostgreSQL), boosting ATPV from $500M → $800M and raising in-network transactions from 42% → 55%, saving $1M+ in discounts.
-- Built a secure SFTP/FTP integration library in Ruby and data ingestion pipelines (250K records/day) with AWS S3, SQS, Docker, and Kubernetes.
-- Integrated an OCR model into Mastercard transaction spend breakdown using customer receipts, boosting categorization accuracy and reducing financial discrepancies.
-- Acted as primary on-call engineer for transaction gateways, pricing pipelines, and APIs, leveraging Datadog, Kibana, and Python to triage and resolve live issues under strict SLAs.
-
-**Teaching Assistant Roles**
-- CC-211 Object Oriented Programming, Teaching Assistant (Spring 2024)
-- CC-211-L Object Oriented Programming Lab, Teaching Assistant (Spring 2024)
+### Community Involvement
+- PUCON'24 Programming Competition, Judge & Problem Setter (June 2024)
+- Google Developers Student Club PUCIT, Mentor (April 2024-June 2024)
