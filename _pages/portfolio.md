@@ -38,4 +38,4 @@ Fine-tuned Google PaliGemma-2 (3B multimodal model) using QLoRA (4-bit quantizat
 - 75% improvement on small objects (critical for gameplay detection)
 - Public release on Hugging Face for reproducibility and benchmarking
 
-**Links:** [GitHub](https://github.com/umair-hassan2/paligemma-3b-finetuning) | [Hugging Face Model](https://huggingface.co/umairhassan02/paligemma2_finetuned) (Coming Soon)
+**Links:** [GitHub](https://github.com/umair-hassan2/paligemma-3b-finetuning) | [Hugging Face Model](https://huggingface.co/umairhassan02/paligemma2_finetuned)
