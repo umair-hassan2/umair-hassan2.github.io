@@ -23,7 +23,7 @@ repository               : "umair-hassan2/umair-hassan2.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "dp.png"
   name             : "Umair Hassan"
   pronouns         : "he/him"
   bio              : "Motivated researcher driven by curiosity for mathematics, coding, and understanding how intelligent systems perceive the world. Exploring the foundations of intelligent visual understanding."
