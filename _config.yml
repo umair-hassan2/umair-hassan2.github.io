@@ -25,8 +25,8 @@ author:
   # Biographic information
   avatar           : "dp.png"
   name             : "Umair Hassan"
-  pronouns         : "he/him"
-  bio              : "Motivated researcher driven by curiosity for mathematics, coding, and understanding how intelligent systems perceive the world. Exploring the foundations of intelligent visual understanding."
+  pronouns         : #"he/him"
+  bio              : "AI Researcher & Backend Engineer"
   location         : "Lahore, Pakistan"
   employer         : "Motive Inc"
   uri              : # URL

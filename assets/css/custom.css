@@ -1,0 +1,13 @@
+/* Custom CSS for circular profile picture */
+.author__avatar img {
+    border-radius: 50% !important;
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+}
+
+/* Ensure the avatar container is also circular */
+.author__avatar {
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
