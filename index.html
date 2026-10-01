@@ -49,7 +49,7 @@
 <div style="display: flex; flex-direction: column; gap: 28px">
 <p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Backend Engineer · AI Research</p>
 <h1 class="disp disp-xl" style="margin: 0; font-size: 60px; line-height: 1.02; font-weight: 500; letter-spacing: -0.02em">Umair Hassan</h1>
-<p style="margin: 0; max-width: 560px; font-size: 20px; line-height: 1.6; color: var(--fg2); text-wrap: pretty">I build production backend systems, and I study how language technology can work for the languages and communities that current AI serves poorly, starting with Urdu and Punjabi as people actually write them.</p>
+<p style="margin: 0; max-width: 560px; font-size: 20px; line-height: 1.6; color: var(--fg2); text-wrap: pretty">I build backend systems and research language models for Urdu and Punjabi, particularly where existing AI systems struggle with how these languages are actually used.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 8px 28px; padding-top: 4px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 13px">
 <a href="https://github.com/umair-hassan2" target="_blank" rel="noopener">GitHub <span class="arr" aria-hidden="true">↗</span></a>
 <a href="https://pk.linkedin.com/in/umair-hassan-gondal" target="_blank" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
@@ -202,7 +202,7 @@
 <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--fg2)">Backend engineer on Motive's fleet-management platform, working on AI-driven spend, fraud and notification systems for trucking fleets.</p>
 <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.6; color: var(--fg3)">
-<li>Designed and built Smart Notifications end to end (frontend, backend and product): live GPS, speed and tank data find the cheapest, nearest, lowest-detour fuel stop with our discount. It lifted fleet card usage 14% and was a flagship feature at Vision 2026.</li>
+<li>Designed and built Smart Notifications end to end (frontend, backend and product): live GPS, speed and tank data find the cheapest, nearest, lowest-detour fuel stop with our discount. It lifted fleet card usage 14% and was a flagship feature at Motive’s 2026 Product Launch Summit.</li>
 <li>Built and tuned the AI fraud-detection system to 90% accuracy, which made the company's $250K/year Fraud Protection Guarantee possible.</li>
 <li>Built SFTP/FTP ingestion pipelines handling about 1M records/day on S3, SQS, Docker and Kubernetes, and integrated an OCR model into Mastercard spend breakdown from receipts.</li>
 <li>Primary on-call for transaction gateways, pricing pipelines and APIs, triaging live issues under strict SLAs with Datadog and Kibana.</li>
@@ -225,10 +225,10 @@
 <span style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted)">01</span>
 <div style="display: flex; flex-direction: column; gap: 8px">
 <h3 style="margin: 0; font-size: 21px; font-weight: 600">Kamaee</h3>
-<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.6; color: var(--fg3); text-wrap: pretty">An offline-first point-of-sale system that turns a shopkeeper's Android phone into the whole counter, with no internet, no hardware and no monthly fee. Camera barcode scanning, inventory with bulk restock, cash, credit and part-paid payments, a khata (credit) ledger, returns, receipts and profit analytics all run on the device in SQLite, and daily reports, bills and payment reminders go out over WhatsApp in one tap.</p>
+<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.6; color: var(--fg3); text-wrap: pretty">An offline-first app that turns an Android phone into a shopkeeper’s counter. It works without internet, extra hardware or a monthly fee. Sales, inventory, bulk restocking, cash and part-paid payments, khata, returns, receipts and profit tracking all run locally in SQLite. The app can also send daily reports, bills and payment reminders through WhatsApp.</p>
 <ul class="hl">
-<li><span class="hl-k">Theft detection</span>Stock audits catch skimming, where items are sold and the cash pocketed without a sale ever being entered. The books still balance, so cash reconciliation can't see it; the audit compares physical shelf counts with what the transaction history says should be there.</li>
-<li><span class="hl-k">AI guardrails</span>A WhatsApp assistant lets owners ask about their shop in Urdu or Roman Urdu. Its safety is structural rather than prompted: the model can only choose from a closed set of typed tools, with refusal as one of them; shop identity is resolved before it runs; and it never does arithmetic, because every figure is pre-computed by tested code and synced to Firestore.</li>
+<li><span class="hl-k">Theft detection</span>I designed a way to catch a type of theft that normal sales records cannot see: when someone takes an item from the shelf, sells it, pockets the cash and never records the sale. The books still balance because there is no transaction to reconcile. The approach is to compare physical shelf counts with the stock that should be there based on transaction history.</li>
+<li><span class="hl-k">AI guardrails</span>The WhatsApp assistant lets shopkeepers ask questions about their business in Urdu or Roman Urdu. Instead of relying on prompts to keep the model safe, I constrained what it can actually do. It chooses from a fixed set of typed tools, including an explicit refusal option, and the shop identity is resolved before any tool runs. The model also never calculates numbers. Tested application code computes every figure first and syncs the results to Firestore; the model only turns those results into a response.</li>
 </ul>
 <span style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted)">Flutter · Dart · SQLite · Firestore · Claude API · ~17K lines · CI-gated</span>
 </div>
@@ -239,7 +239,12 @@
 <span style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted)">02</span>
 <div style="display: flex; flex-direction: column; gap: 8px">
 <h3 style="margin: 0; font-size: 21px; font-weight: 600">Smart Notifications at Motive</h3>
-<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.6; color: var(--fg3); text-wrap: pretty">A real-time system that detects when a truck driver needs fuel and recommends the cheapest, nearest station that honours the fleet-card discount, with the least detour. It joins live GPS, speed and tank-level data across many microservices with thousands of North American stations and OSRM road geometry, informed by my research into US road-network structure and detour index. I owned it across frontend, backend and product; fleet card usage rose 14% and it was a flagship feature at Vision 2026.</p>
+<p style="margin: 0; max-width: 640px; font-size: 17px; line-height: 1.6; color: var(--fg3); text-wrap: pretty">A real-time fuel recommendation system for truck drivers at Motive (formerly KeepTruckin). It uses live GPS, speed and tank-level telemetry to detect when a driver needs fuel and recommends stations based on remaining range, fuel price, fleet-card discounts, driving distance and road detour. A second flow uses upcoming HOS mandatory breaks to suggest suitable places to stop.</p>
+<ul class="hl">
+<li><span class="hl-k">Data &amp; infrastructure</span>I integrated data across 5–6 services, including vehicle telemetry, directions, fleet cards and OSRM for driving distance and ETA. I also built the pipeline for fuel-station locations and partner discounts from networks such as Love’s and TA, ingesting SFTP/FTP files through SQS and parallel background workers that processed large feeds in chunks without locking the pipeline. The recommendation service handled around 190K requests per 5 seconds (~38K RPS), including complex rule evaluation.</li>
+<li><span class="hl-k">Recommendation engine</span>I built a configurable rules engine that combined detour, remaining range, price, discounts and other product constraints, allowing the recommendation logic to change without rewriting the system. I also conducted a literature study on US road-network structure and detour indices to understand how actual driving distance differs from simple geographic distance. One practical challenge was noisy GPS bearing while trucks were moving, so I used circular means and other smoothing techniques to prevent recommendations from jumping between directions.</li>
+<li><span class="hl-k">End to end</span>I owned the feature from research and product design through frontend, backend, deployments, observability and iteration. The system increased fleet-card usage by 14% among eligible drivers and was launched as a flagship feature at Motive’s 2026 Product Launch Summit.</li>
+</ul>
 <span style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted)">Rails · Go microservices · RPC · OSRM · Angular · PostgreSQL · Kafka · SQS</span>
 </div>
 <span class="plink" style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted); white-space: nowrap">Proprietary</span>
@@ -291,7 +296,7 @@
 
 </div>
 
-<div class="print-only" aria-hidden="true" style="background: #ffffff; color: #1a1a19; font-family: 'Source Serif 4', Georgia, serif; font-size: 11pt; line-height: 1.45; display: flex; flex-direction: column; gap: 18px">
+<div class="print-only" aria-hidden="true" style="background: #ffffff; color: #1a1a19; font-family: 'Source Serif 4', Georgia, serif; font-size: 10.5pt; line-height: 1.42; display: flex; flex-direction: column; gap: 14px">
 
 <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding-bottom: 12px; border-bottom: 1.5px solid #1a1a19">
 <div style="display: flex; flex-direction: column; gap: 4px">
@@ -305,7 +310,7 @@
 </div>
 </div>
 
-<p style="margin: 0; color: #2a2a28">I build production backend systems, and I study how language technology can work for the languages and communities that current AI serves poorly, starting with Urdu and Punjabi as people actually write them. Applying for graduate study, Fall 2027.</p>
+<p style="margin: 0; color: #2a2a28">I build backend systems and research language models for Urdu and Punjabi, particularly where existing AI systems struggle with how these languages are actually used. Applying for graduate study, Fall 2027.</p>
 
 <section style="display: flex; flex-direction: column; gap: 6px">
 <h2 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #6a6964; border-bottom: 1px solid #d9d6cf; padding-bottom: 3px">Research</h2>
@@ -326,7 +331,7 @@
 <div style="display: flex; flex-direction: column; gap: 3px">
 <div style="display: flex; justify-content: space-between; gap: 16px"><strong style="font-weight: 600">Motive · Backend Engineer</strong><span style="font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; color: #55544f">Oct 2024 – Jun 2026</span></div>
 <ul style="margin: 0; padding-left: 16px; display: flex; flex-direction: column; gap: 2px">
-<li>Built Smart Notifications end to end; fleet card usage +14%, flagship feature at Vision 2026.</li>
+<li>Built Smart Notifications end to end; fleet card usage +14%, flagship feature at Motive’s 2026 Product Launch Summit.</li>
 <li>Built and tuned AI fraud detection to 90% accuracy, enabling a $250K/year Fraud Protection Guarantee.</li>
 <li>Ingestion pipelines handling about 1M records/day on S3, SQS, Docker and Kubernetes.</li>
 </ul>
