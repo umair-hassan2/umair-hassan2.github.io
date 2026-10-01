@@ -1,0 +1,133 @@
+/* Fonts: latin subsets, self-hosted (Source Serif 4 is a variable font; Source Serif 4 italic and IBM Plex Mono from Google Fonts) */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono-400.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono-500.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/source-serif-4-italic.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("../fonts/source-serif-4.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/instrument-serif-400.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Colour tokens: light (default) and dark. Change the accent here. */
+:root{color-scheme:light;--bg:#f8f7f4;--fg:#1a1a19;--fg2:#2a2a28;--fg3:#3a3a37;--fg4:#4a4945;--muted:#6a6964;--muted2:#55544f;--muted3:#5f5e59;--rule:#e4e2dd;--rule2:#cfccc5;--rule3:#d9d6cf;--dot:#8a8882;--band:#f0eee9;--accent:#8a4100;--accent-h:#5e2c00;--navbg:rgba(248,247,244,0.92);--code:#efede8;--tint:rgba(26,26,25,0.025)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#161513;--fg:#ecebe6;--fg2:#dad8d1;--fg3:#c5c3bb;--fg4:#b4b2aa;--muted:#9c9a91;--muted2:#afada5;--muted3:#a4a299;--rule:#2d2c29;--rule2:#3b3a37;--rule3:#3b3a37;--dot:#78766f;--band:#1d1c1a;--accent:#e08a4c;--accent-h:#f2a873;--navbg:rgba(22,21,19,0.88);--code:#22211e;--tint:rgba(236,235,230,0.035)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#161513;--fg:#ecebe6;--fg2:#dad8d1;--fg3:#c5c3bb;--fg4:#b4b2aa;--muted:#9c9a91;--muted2:#afada5;--muted3:#a4a299;--rule:#2d2c29;--rule2:#3b3a37;--rule3:#3b3a37;--dot:#78766f;--band:#1d1c1a;--accent:#e08a4c;--accent-h:#f2a873;--navbg:rgba(22,21,19,0.88);--code:#22211e;--tint:rgba(236,235,230,0.035)}
+
+/* Base + responsive rules */
+body{margin:0;background:var(--bg);color:var(--fg);transition:background-color .35s ease,color .35s ease;font-family:"Source Serif 4",Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:var(--accent);text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0% 1px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .2s ease,color .2s ease}
+a:hover{color:var(--accent-h);background-size:100% 1px}
+.hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);column-gap:88px;align-items:end}
+.navlinks{display:flex;gap:28px}
+.exp{display:grid;grid-template-columns:220px minmax(0,1fr);column-gap:40px}
+.paper{display:grid;grid-template-columns:72px minmax(0,1fr);column-gap:24px}
+.prow h3{transition:color .15s ease}
+.prow:hover h3{color:var(--accent)}
+/* Project highlights */
+.hl{list-style:none;margin:6px 0 2px;padding:0;display:flex;flex-direction:column;gap:12px;max-width:640px}
+.hl li{font-size:16px;line-height:1.6;color:var(--fg3);text-wrap:pretty}
+.hl-k{display:block;margin-bottom:2px;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+
+/* Nav: active section + theme toggle */
+.navlinks a.active{color:var(--fg) !important;background-image:linear-gradient(var(--accent),var(--accent));background-size:100% 1px}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;margin:-8px 0;padding:0;border:1px solid transparent;border-radius:50%;background:transparent;color:var(--muted2);cursor:pointer;transition:color .15s ease,border-color .15s ease}
+.theme-toggle:hover{color:var(--fg);border-color:var(--rule2)}
+.theme-toggle:focus-visible,.cite-btn:focus-visible,.copy-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Cite / BibTeX */
+.cite-btn,.copy-btn{font:inherit;font-size:12px;color:var(--accent);background:none;border:0;padding:0;cursor:pointer}
+.cite-btn[aria-expanded="true"]{color:var(--fg)}
+.bib{position:relative;margin-top:10px;background:var(--code);border:1px solid var(--rule)}
+.bib pre{margin:0;padding:16px 18px;overflow-x:auto;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:12px;line-height:1.6;color:var(--fg3)}
+.bib .copy-btn{position:absolute;top:10px;right:12px;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+
+/* Achievements: compact list */
+.achs{list-style:none;margin:0;padding:0}
+.ach{display:grid;grid-template-columns:260px minmax(0,1fr) auto;column-gap:32px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--rule)}
+.ach-e{font-size:18px;font-weight:600;color:var(--fg)}
+.ach-r{font-size:16px;line-height:1.5;color:var(--fg3)}
+.ach-l{display:flex;gap:18px;font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-size:12px;white-space:nowrap}
+
+
+/* Display type (headings) */
+.disp{font-family:'Instrument Serif',Georgia,serif !important;font-weight:400 !important;letter-spacing:-0.01em !important}
+.disp-xl{font-size:104px !important;line-height:.98 !important;letter-spacing:-0.02em !important}
+.disp-l{font-size:44px !important}
+
+/* Paper grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;background:url("../assets/grain.png");opacity:.05;mix-blend-mode:multiply}
+:root[data-theme="dark"] body::after{opacity:.05;mix-blend-mode:screen}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) body::after{opacity:.05;mix-blend-mode:screen}}
+
+/* Motion */
+header,#about,.bib,.ach,.prow,.paper{transition:background-color .35s ease,border-color .35s ease}
+.arr{display:inline-block;transition:transform .2s ease}
+a:hover .arr{transform:translate(2px,-2px)}
+.prow,.paper,.ach{position:relative;z-index:0}
+.prow::before,.paper::before,.ach::before{content:"";position:absolute;top:0;bottom:0;left:-16px;right:-16px;background:var(--tint);opacity:0;transition:opacity .2s ease;z-index:-1}
+.prow:hover::before,.paper:hover::before,.ach:hover::before{opacity:1}
+.hero > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero > *:nth-child(2){animation-delay:.12s}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* Print: a one-page summary instead of the web layout */
+.print-only{display:none !important}
+@media print{
+  @page{size:letter;margin:0.6in 0.7in}
+  body{background:#fff !important}
+  body::after{display:none}
+  body > *:not(.print-only){display:none !important}
+  .print-only{display:flex !important}
+}
+
+@media (max-width:860px){
+.disp-xl{font-size:74px !important}
+.disp-l{font-size:38px !important}
+.ach{grid-template-columns:minmax(0,1fr);row-gap:4px}
+.hero{grid-template-columns:minmax(0,1fr);row-gap:56px}
+.exp{grid-template-columns:minmax(0,1fr);row-gap:12px}
+.navlinks{display:none}
+.tagline{display:none !important}
+.prow{grid-template-columns:36px minmax(0,1fr) !important;row-gap:12px}
+.plink{grid-column:2}
+}
+@media (max-width:560px){
+.disp-xl{font-size:60px !important}
+.paper{grid-template-columns:minmax(0,1fr);row-gap:4px}
+.split{flex-direction:column;gap:4px !important}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}html{scroll-behavior:auto}}
